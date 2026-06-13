@@ -7,9 +7,8 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   const socials = [
-    { label: t.footer.social.facebook, href: "#" },
-    { label: t.footer.social.linkedin, href: "#" },
-    { label: t.footer.social.twitter, href: "#" },
+    { label: t.footer.social.facebook, href: "https://www.facebook.com/profile.php?id=61587006760897" },
+    { label: t.footer.social.instagram, href: "https://www.instagram.com/rora.bath/" },
   ];
 
   return (

@@ -1,7 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/lib/i18n/LanguageProvider";
-import { EMAIL, PHONE_1_DISPLAY, PHONE_1_TEL, PHONE_2_DISPLAY, PHONE_2_TEL } from "@/lib/i18n/translations";
+import { EMAIL, PHONE_1_DISPLAY, PHONE_1_TEL, PHONE_2_DISPLAY, PHONE_2_TEL, PHONE_3_DISPLAY, PHONE_3_TEL } from "@/lib/i18n/translations";
 
 interface LegalPageProps {
   page: "privacy" | "terms";
@@ -71,6 +71,10 @@ export default function LegalPage({ page }: LegalPageProps) {
               <br />
               <a href={`tel:${PHONE_2_TEL}`} dir="ltr" className="text-accent">
                 {PHONE_2_DISPLAY}
+              </a>
+              <br />
+              <a href={`tel:${PHONE_3_TEL}`} dir="ltr" className="text-accent">
+                {PHONE_3_DISPLAY}
               </a>
             </div>
             <div className="min-w-[220px] flex-1 rounded-lg border border-gray-200 bg-white p-3">

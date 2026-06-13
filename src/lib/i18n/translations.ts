@@ -58,7 +58,7 @@ export interface Dictionary {
   };
   footer: {
     rights: string;
-    social: { facebook: string; linkedin: string; twitter: string };
+    social: { facebook: string; instagram: string; twitter: string };
   };
   privacy: {
     title: string;
@@ -82,6 +82,8 @@ export const PHONE_1_DISPLAY = "+971 55 158 8800";
 export const PHONE_1_TEL = "+971551588800";
 export const PHONE_2_DISPLAY = "+86 138 0276 0200";
 export const PHONE_2_TEL = "+8613802760200";
+export const PHONE_3_DISPLAY = "+963 996 679 261";
+export const PHONE_3_TEL = "+963996679261";
 export const EMAIL = "sales@rorabath.com";
 export const MANAGEMENT_EMAIL = "yamen@rorabath.com";
 
@@ -108,10 +110,12 @@ export const translations: Record<Locale, Dictionary> = {
     },
     about: {
       title: "About Us",
-      text: "Rora Bath is a Syrian company based in Saida, Daraa, specializing in sanitary ware and general trading. Founded with a commitment to quality and reliability, we supply homes, businesses, and contractors with a comprehensive range of bathroom fittings, plumbing materials, and sanitary products sourced from trusted manufacturers. Our team brings years of hands-on experience in the trade, allowing us to guide customers — from individual homeowners to large-scale commercial clients — toward the right products for their needs and budgets. At Rora Bath, we believe that every space deserves quality materials and attentive service.",
+      text: "Rora Bath is a Syrian company based in Saida, Daraa, specializing in sanitary ware and general trading. Founded with a commitment to quality and reliability, we supply homes, businesses, and contractors with a comprehensive range of bathroom fittings, plumbing materials, and sanitary products sourced from trusted manufacturers. What sets us apart is our deep-rooted presence in China — with over 25 years of experience in Chinese trade and shipping, and our own company established in China, we source directly from manufacturers, ensuring superior quality control, competitive pricing, and reliable supply chains. Our team brings decades of hands-on experience, allowing us to guide customers — from individual homeowners to large-scale commercial clients — toward the right products for their needs and budgets.",
       points: [
         "✔ Specialized in sanitary ware & general trading since our founding",
         "✔ Based in Saida, Daraa, Syria — serving local and regional markets",
+        "✔ 25+ years of experience in China trade & shipping",
+        "✔ Own company in China — direct factory sourcing & quality control",
         "✔ Wide catalogue: bathroom fittings, plumbing supplies & more",
         "✔ Trusted by contractors, businesses, and homeowners alike",
         "✔ Dedicated after-sales support and expert product guidance",
@@ -201,7 +205,7 @@ export const translations: Record<Locale, Dictionary> = {
     },
     footer: {
       rights: "All rights reserved.",
-      social: { facebook: "Facebook", linkedin: "LinkedIn", twitter: "Twitter" },
+      social: { facebook: "Facebook", instagram: "Instagram", twitter: "Twitter" },
     },
     privacy: {
       title: "Privacy Policy",
@@ -362,10 +366,12 @@ export const translations: Record<Locale, Dictionary> = {
     },
     about: {
       title: "من نحن",
-      text: "رورا باث شركة سورية مقرها في صيدا، درعا، متخصصة في تجارة الأدوات الصحية والتجارة العامة. تأسست الشركة على قيم الجودة والموثوقية، وتعمل على توفير مجموعة شاملة من التجهيزات الصحية ومواد السباكة والأدوات الصحية المستوردة من مصنّعين معتمدين. يمتلك فريقنا خبرة واسعة في هذا المجال، مما يمكّننا من تقديم الاستشارة الصحيحة لعملائنا — سواء كانوا أصحاب منازل أو مقاولين أو شركات — لاختيار المنتج الأنسب لاحتياجاتهم وميزانيتهم. في رورا باث، نؤمن بأن كل مشروع يستحق مواد عالية الجودة وخدمة متميزة.",
+      text: "رورا باث شركة سورية مقرها في صيدا، درعا، متخصصة في تجارة الأدوات الصحية والتجارة العامة. تأسست الشركة على قيم الجودة والموثوقية، وتعمل على توفير مجموعة شاملة من التجهيزات الصحية ومواد السباكة المستوردة من مصنّعين معتمدين. ما يميّزنا هو حضورنا الراسخ في الصين — إذ تمتلك رورا باث خبرة تتجاوز 25 عامًا في التجارة والشحن مع الصين، وشركة خاصة بنا على أراضيها، مما يتيح لنا الاستيراد المباشر من المصانع وضمان أعلى معايير الجودة وأفضل الأسعار التنافسية. يمكّننا ذلك من تقديم الاستشارة الصحيحة لعملائنا — سواء كانوا أصحاب منازل أو مقاولين أو شركات — لاختيار المنتج الأنسب لاحتياجاتهم وميزانيتهم.",
       points: [
         "✔ متخصصون في الأدوات الصحية والتجارة العامة منذ تأسيسنا",
         "✔ مقرنا في صيدا، درعا، سوريا — نخدم السوق المحلية والإقليمية",
+        "✔ خبرة تتجاوز 25 عامًا في التجارة والشحن مع الصين",
+        "✔ شركة خاصة بنا في الصين — استيراد مباشر من المصانع ورقابة على الجودة",
         "✔ كتالوج واسع: تجهيزات الحمامات، مواد السباكة والمزيد",
         "✔ موثوق بنا من قبل المقاولين والشركات وأصحاب المنازل",
         "✔ دعم ما بعد البيع وتوجيه متخصص في المنتجات",
@@ -453,7 +459,7 @@ export const translations: Record<Locale, Dictionary> = {
     },
     footer: {
       rights: "جميع الحقوق محفوظة.",
-      social: { facebook: "فيسبوك", linkedin: "لينكدإن", twitter: "تويتر" },
+      social: { facebook: "فيسبوك", instagram: "إنستغرام", twitter: "تويتر" },
     },
     privacy: {
       title: "سياسة الخصوصية",

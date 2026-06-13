@@ -10,6 +10,8 @@ import {
   PHONE_1_TEL,
   PHONE_2_DISPLAY,
   PHONE_2_TEL,
+  PHONE_3_DISPLAY,
+  PHONE_3_TEL,
 } from "@/lib/i18n/translations";
 
 export default function Contact() {
@@ -31,6 +33,9 @@ export default function Contact() {
           </a>
           <a href={`tel:${PHONE_2_TEL}`} dir="ltr" className="text-sm text-body underline hover:text-heading">
             {PHONE_2_DISPLAY}
+          </a>
+          <a href={`tel:${PHONE_3_TEL}`} dir="ltr" className="text-sm text-body underline hover:text-heading">
+            {PHONE_3_DISPLAY}
           </a>
         </div>
       ),
