@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand palette — Ocean Stone + Ivory Foam */
+  --color-primary: #2C4E8F;
+  --color-primary-light: #3F61A0;
+  --color-primary-mid: #5273B1;
+  --color-primary-soft: #6685C1;
+  --color-primary-pale: #7A97D1;
+  --color-primary-faint: #8EA9E1;
+
+  --color-accent: #2C4E8F;
+  --color-accent-dark: #3F61A0;
+
+  --color-bg: #F4EFEB;
+  --color-bg-alt: #EDE7E3;
+  --color-bg-mid: #E6E0DC;
+  --color-bg-deep: #DFD9D5;
+
+  --color-heading: #2C4E8F;
+  --color-body: #3F61A0;
+  --color-body-soft: #5273B1;
+  --color-surface: #F4EFEB;
+  --color-surface-alt: #EDE7E3;
+
+  --font-sans: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-sans antialiased;
+  background-color: #F4EFEB;
+  color: #2C4E8F;
+}
