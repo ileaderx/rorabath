@@ -3,10 +3,57 @@
 import FadeIn from "./FadeIn";
 import ContactForm from "./ContactForm";
 import { useLanguage } from "@/lib/i18n/LanguageProvider";
-import { EMAIL, PHONE_DISPLAY, PHONE_TEL } from "@/lib/i18n/translations";
+import {
+  EMAIL,
+  MANAGEMENT_EMAIL,
+  PHONE_1_DISPLAY,
+  PHONE_1_TEL,
+  PHONE_2_DISPLAY,
+  PHONE_2_TEL,
+} from "@/lib/i18n/translations";
 
 export default function Contact() {
   const { t } = useLanguage();
+
+  const cards = [
+    {
+      icon: "📍",
+      label: t.contact.addressLabel,
+      content: <p className="text-sm leading-relaxed text-body">{t.contact.address}</p>,
+    },
+    {
+      icon: "📞",
+      label: t.contact.phoneLabel,
+      content: (
+        <div className="flex flex-col gap-1">
+          <a href={`tel:${PHONE_1_TEL}`} dir="ltr" className="text-sm text-body underline hover:text-heading">
+            {PHONE_1_DISPLAY}
+          </a>
+          <a href={`tel:${PHONE_2_TEL}`} dir="ltr" className="text-sm text-body underline hover:text-heading">
+            {PHONE_2_DISPLAY}
+          </a>
+        </div>
+      ),
+    },
+    {
+      icon: "✉️",
+      label: t.contact.emailLabel,
+      content: (
+        <a href={`mailto:${EMAIL}`} className="text-sm text-body underline hover:text-heading">
+          {EMAIL}
+        </a>
+      ),
+    },
+    {
+      icon: "👤",
+      label: t.contact.managementLabel,
+      content: (
+        <a href={`mailto:${MANAGEMENT_EMAIL}`} className="text-sm text-body underline hover:text-heading">
+          {MANAGEMENT_EMAIL}
+        </a>
+      ),
+    },
+  ];
 
   return (
     <section id="contact" className="bg-surface-alt px-5 py-20">
@@ -18,31 +65,23 @@ export default function Contact() {
           {t.contact.intro}
         </p>
 
-        <div className="flex flex-wrap items-start justify-center gap-10">
-          <div className="min-w-[280px] flex-1 basis-[400px]">
-            <ContactForm />
-          </div>
+        {/* Centered contact form */}
+        <div className="mx-auto mb-14 max-w-[620px]">
+          <ContactForm />
+        </div>
 
-          <address className="flex-1 basis-[300px] text-center text-[0.95rem] not-italic leading-7 text-body">
-            <p className="font-bold text-heading">{t.contact.companyName}</p>
-            <p>{t.contact.companyType}</p>
-            <p>
-              <strong className="text-heading">{t.contact.addressLabel}</strong>{" "}
-              {t.contact.address}
-            </p>
-            <p>
-              <strong className="text-heading">{t.contact.phoneLabel}</strong>{" "}
-              <a href={`tel:${PHONE_TEL}`} dir="ltr" className="text-black underline">
-                {PHONE_DISPLAY}
-              </a>
-            </p>
-            <p>
-              <strong className="text-heading">{t.contact.emailLabel}</strong>{" "}
-              <a href={`mailto:${EMAIL}`} className="text-black underline">
-                {EMAIL}
-              </a>
-            </p>
-          </address>
+        {/* Info cards */}
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {cards.map(({ icon, label, content }) => (
+            <div
+              key={label}
+              className="flex flex-col items-center rounded-2xl bg-white px-6 py-8 text-center shadow-sm"
+            >
+              <span className="mb-3 text-3xl">{icon}</span>
+              <h3 className="mb-2 font-bold text-heading">{label}</h3>
+              {content}
+            </div>
+          ))}
         </div>
       </FadeIn>
     </section>

@@ -44,6 +44,7 @@ export interface Dictionary {
     address: string;
     phoneLabel: string;
     emailLabel: string;
+    managementLabel: string;
     form: {
       name: string;
       email: string;
@@ -77,9 +78,12 @@ export interface Dictionary {
   };
 }
 
-export const PHONE_DISPLAY = "+963 996 679 261";
-export const PHONE_TEL = "+963996679261";
+export const PHONE_1_DISPLAY = "+971 55 158 8800";
+export const PHONE_1_TEL = "+971551588800";
+export const PHONE_2_DISPLAY = "+86 138 0276 0200";
+export const PHONE_2_TEL = "+8613802760200";
 export const EMAIL = "sales@rorabath.com";
+export const MANAGEMENT_EMAIL = "yamen@rorabath.com";
 
 export const translations: Record<Locale, Dictionary> = {
   en: {
@@ -179,10 +183,11 @@ export const translations: Record<Locale, Dictionary> = {
         "Whether you have a product inquiry, need a quote for your project, or simply want to learn more about what we offer — our team is here to help. Reach out and we will respond promptly.",
       companyName: "Rora Bath",
       companyType: "Sanitary Ware & General Trading",
-      addressLabel: "Address:",
+      addressLabel: "Address",
       address: "Saida, Daraa, Syria",
-      phoneLabel: "Phone:",
-      emailLabel: "Email:",
+      phoneLabel: "Phone",
+      emailLabel: "Sales Email",
+      managementLabel: "Management",
       form: {
         name: "Name",
         email: "Email",
@@ -430,10 +435,11 @@ export const translations: Record<Locale, Dictionary> = {
       intro: "سواء كان لديك استفسار عن منتج، تحتاج عرض سعر لمشروعك، أو تريد معرفة المزيد عمّا نقدمه — فريقنا هنا لمساعدتك. تواصل معنا وسنرد عليك في أقرب وقت.",
       companyName: "رورا باث",
       companyType: "الأدوات الصحية والتجارة العامة",
-      addressLabel: "العنوان:",
+      addressLabel: "العنوان",
       address: "صيدا، درعا، سوريا",
-      phoneLabel: "الهاتف:",
-      emailLabel: "البريد الإلكتروني:",
+      phoneLabel: "الهاتف",
+      emailLabel: "بريد المبيعات",
+      managementLabel: "الإدارة",
       form: {
         name: "الاسم",
         email: "البريد الإلكتروني",
